@@ -1,0 +1,114 @@
+.blue {
+    background-color: #51ABD2 !important;
+}
+.blueDark{
+    background-color:#416c7a;
+}
+.blue.darken-1-txt {
+    background-color: #55818F !important;
+}
+.btnRadius{
+    border-radius: 10px;
+}
+.app-icon {
+    background-color: #fff;
+    background: url('/img/logoIndra.png') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+.app-icon2 {
+    height: 210px;
+    width: 250px;
+}
+.app-icon-user {
+  background-color: #fff;
+  background: url('/img/user.png') center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+  z-index: 1;
+}
+.fd-user {
+  background: url('/img/menu.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  opacity: 0.3;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 120px;
+  padding: 10px;
+
+}
+
+.name-user {
+  font-size: 19px;
+  font-style: normal;
+}
+#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    opacity: 0.9;
+
+
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #416c7a;
+    box-shadow: 0 1px 0 0 #416c7a;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #416c7a;
+}
+
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+    background-color:#51ABD2;
+    position: inherit;
+}
+[nav-bar-transition="android"] [nav-bar="active"] .bar, [nav-bar-transition="android"] [nav-bar="entering"] .bar {
+    background-color:#51ABD2;
+}
+.bar.bar-stable .title {
+    color: white;
+}
+.bar-stable .button.button-clear {
+    color: white;
+}

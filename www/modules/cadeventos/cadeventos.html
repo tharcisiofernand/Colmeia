@@ -1,0 +1,83 @@
+<ion-view class="white-text" view-title="Perfil" hide-nav-bar="true">
+  <ion-content>
+  	<div class="light static fd-user" style=""></div>
+    <div class="CadEvent">
+        <div class="row">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo right"><i class="large material-icons">input</i></a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a ng-click="vm.cadeventos()">Eventos</a></li>
+                <li><a href="badges.html">Listas</a></li>
+                <li><a ng-click="vm.home()">Dashboard</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+      <!-- Inicio do Form -->
+      	<div class="row">
+	        <form id="FormCadEvent" class="col s12">
+	       		<div class="row">
+	       			<div id="frmImputEvent" class="input-field col s12">
+	       			<i class="material-icons prefix">perm_contact_calendar</i>
+	       				<input type="text" class="validate" id="nome" ng-model="frmEvento.nome">
+			   			<label class="input-field col s12">Nome:</label>
+			   		</div>
+			   	</div>
+			   	<div class="row">
+	       			<div id="frmImputEvent" class="input-field col s12">
+	       			<i class="material-icons prefix">room</i>
+	       				<input type="text" class="validate" ng-model="frmEvento.localizacao">
+			   			<label class="input-field col s12">Localização:</label>
+			   		</div>
+			   	</div>
+			   	<div class="row">
+	       			<div id="frmImputEvent" class="input-field col s12">
+	       			<i class="material-icons prefix">schedule</i>
+	       				<input type="text" ion-datetime-picker id="dataEvento" class="validate" ng-model="frmEvento.data" >
+			   			<label for="dataEvento">{{frmEvento.data| date: "yyyy-MM-dd H:mm:ss"}}</label>
+			   		</div>
+			   	</div>
+			   	<div class="row">
+	       			<div id="frmImputEvent" class="input-field col s12">
+		       			<select id="comboTipoEvento" ng-model="vm.filtro.tipo"
+	                        ng-options="tipo.desc for tipo in vm.tipo | orderBy:'desc'">
+	                    <option value="">Todos</option>
+		                </select>
+		                <label for="comboTipoEvento">Tipo Evento:</label>
+			   		</div>
+			   	</div>
+			   	<div class="row" id="frmComboItem">
+	       			<div id="frmImputEvent" class="input-field col s11 con-80">
+		       			<select id="comboItem" ng-model="vm.filtro.item"
+	                        ng-options="item.desc for item in vm.item | orderBy:'desc'">
+	                    <option value="">Todos</option>
+		                </select>
+		                <label for="comboItem">Tipo de Itens:</label>
+			   		</div>
+			   		<div class="input-field col s1 col-20">
+                        <a class="btn-floating waves-effect waves-light"
+                        ng-click="vm.carregarListItens(vm.filtro.item)"><i class="material-icons">add</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                        <ion-list id="frmImputEvent" class="input-field col s12">
+                        	<ion-item class="item-divider">Lista de itens</ion-item>
+						   	<ion-item ng-repeat="item in frmEvento.item" track by $index">
+						   		{{$index}} - {{item}}
+						   	</ion-item>
+						</ion-list>
+                </div>
+                <div class="row">
+	       			<div id="frmImputEvent" class="input-field col s12">
+		       			<ion-list>
+						  <ion-item ng-click="vm.viewConvidados(frmEvento)">Lista de Convidados</ion-item>  
+						</ion-list>
+			   		</div>
+			   	</div>
+			</form>
+		</div>
+    </div>
+  </ion-content>
+</ion-view>
