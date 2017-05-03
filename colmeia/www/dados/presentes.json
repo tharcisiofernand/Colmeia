@@ -1,0 +1,34 @@
+[
+	{
+		"cod" : "1",
+		"desc" : "Perfume"
+	},
+	{
+		"cod" : "2",
+		"desc" : "Blusa"
+	},
+	{
+		"cod" : "3",
+		"desc" : "Celular"
+	},
+	{
+		"cod" : "4",
+		"desc" : "Sandália"
+	},
+	{
+		"cod" : "5",
+		"desc" : "Brinco"
+	},
+	{
+		"cod" : "6",
+		"desc" : "Calça"
+	},
+	{
+		"cod" : "7",
+		"desc" : "Tênis"
+	},
+	{
+		"cod" : "8",
+		"desc" : "Bicicleta"
+	}
+] 

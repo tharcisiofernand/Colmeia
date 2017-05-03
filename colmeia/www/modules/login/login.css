@@ -1,0 +1,14 @@
+.login{
+    background-size: cover;
+    background-color: white;
+}
+.fd-login {
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 20px;
+}

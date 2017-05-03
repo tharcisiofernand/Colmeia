@@ -1,0 +1,39 @@
+.chart {
+	text-align: center !important;
+}
+
+.hide-on-med-and-down {
+    display: inherit !important;
+}
+
+nav .nav-wrapper {
+    padding-top: 1.5em !important;
+}
+
+nav ul a {
+    font-size: 0.9rem !important
+}
+
+nav .brand-logo.right {
+    bottom: 0 !important;
+}
+
+#titleChart {
+	color: teal;
+}
+
+.fixed-action-btn{
+    position: inherit;
+    text-align: right;
+    padding-right: 10px !important;
+}
+
+.fixed-action-btn.horizontal ul {
+    text-align: right;
+    right: 64px;
+    top: 50%;
+    transform: inherit;
+    left: auto;
+    width: 100%; 
+    position: relative;
+}

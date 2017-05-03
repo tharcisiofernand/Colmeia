@@ -1,0 +1,34 @@
+[
+	{
+		"cod" : "1",
+		"desc" : "Refrigerantes"
+	},
+	{
+		"cod" : "2",
+		"desc" : "Cerveja"
+	},
+	{
+		"cod" : "3",
+		"desc" : "Carne"
+	},
+	{
+		"cod" : "4",
+		"desc" : "Arroz"
+	},
+	{
+		"cod" : "5",
+		"desc" : "Salada"
+	},
+	{
+		"cod" : "6",
+		"desc" : "Frutas"
+	},
+	{
+		"cod" : "7",
+		"desc" : "Sobremesa"
+	},
+	{
+		"cod" : "8",
+		"desc" : "Wisky"
+	}
+] 

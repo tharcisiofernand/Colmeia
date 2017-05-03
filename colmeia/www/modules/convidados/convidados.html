@@ -1,0 +1,38 @@
+<ion-view class="white-text" view-title="Perfil" hide-nav-bar="true">
+  <ion-content>
+  	<div class="light static fd-user" style=""></div>
+    <div class="CadEvent">
+        <div class="row">
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo right"><i class="large material-icons">input</i></a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a ng-click="vm.cadeventos()">Eventos</a></li>
+                <li><a href="badges.html">Listas</a></li>
+                <li><a ng-click="vm.home()">Dashboard</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+      <!-- Inicio da Lista -->
+      	<div class="row">
+            <ion-list class="input-field col s12">
+            	<ion-item class="item-divider">Lista de Convidados:</ion-item>
+            	<ion-item id="itemList" class="item item-checkbox">
+            		<ion-checkbox color="red" ng-model="vm.listChek" ng-checked="vm.listChek" ng-click="vm.SelectAll()"></ion-checkbox>
+            		<ion-label class="labelCheckbox">Selecionar Todos</ion-label>
+            	</ion-item>
+			   	<ion-item id="itemList" class="item item-checkbox" ng-repeat="convidados in vm.convidados track by $index" >
+				   	<ion-checkbox color="red" ng-checked="vm.convidados.checked" ng-mode='vm.convidados.checked'></ion-checkbox>
+				   	<ion-label class="labelCheckbox">{{convidados.desc}}</ion-label>
+			   	</ion-item>
+			</ion-list>
+        </div>	
+        <div class="row">
+	        <button class="button button-positive" ng-click="vm.voltar()">
+	          Concluir
+	        </button>  
+        </div>      
+  </ion-content>
+</ion-view>
